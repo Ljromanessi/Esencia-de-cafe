@@ -6,6 +6,32 @@
 }
 
 body{
+    .navegador{
+        display: flex;
+        img{
+            width: 70px;
+            margin: 10px;
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            margin-right: 50px;
+            li{
+                list-style: none;
+                font-size: 25px;
+                a{
+                    text-decoration:none;
+                    color: black;
+                }
+            }
+        }
+    }
+
     .presentacion{
         position: relative;
         width: 100%;
@@ -205,6 +231,8 @@ body{
         position: relative;
         display: flex;
         background-color: #828181;
+        width: 100%;
+        height: 200px;
 
         .logo{
             position: absolute;
@@ -213,10 +241,9 @@ body{
 
         .datos{
             background-color: transparent;
-            margin-top:25px ;
+            margin-top:10px ;
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
             align-items: center;
             position: absolute;
             z-index: 1;
